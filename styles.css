@@ -161,6 +161,7 @@ header nav > ul li{
 
 .stories .container h2, .stories .container > .article-body a{
     color: #5A67D8;
+    text-decoration: none;
 }
 
 .stories .container > .article-body h3{
@@ -169,6 +170,7 @@ header nav > ul li{
 
 .stories .container > article a{
     float: left;
+    text-decoration: none;
 }
 
 /*styling for newsletter section*/
