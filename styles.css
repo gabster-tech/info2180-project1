@@ -1,13 +1,13 @@
 /* Add your CSS to this file */
-*{
-    font-family: -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+/**{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-size: 18px;
-}
+}*/
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
 }
 
 .container {
@@ -16,8 +16,10 @@ body {
     width: 100%;
 }
 
+/* styling for header section*/
 header{
     background-color: white;
+    font-size: 18px;
 }
 
 header h1{
@@ -25,8 +27,15 @@ header h1{
     font-size: 18px;     
 }
 
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header > .container nav a{
     color:#6b7280;
+    text-decoration: none;
 }
 
 /*nav a{
@@ -49,8 +58,19 @@ header nav > ul li{
     display: inline;
 }*/
 
-.overview-hero-image{
+/*styling for hero banner*/
+
+.overview-hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E2E8F0;
+    padding: 40px 90px 40px 90px;
+}
+
+.overview-hero-image{
+    padding: 20px 20px 20px 20px;
+    margin-right: 20px;
 }
 
 .overview-hero-image img{
@@ -59,41 +79,84 @@ header nav > ul li{
     float: left;
 }
 
+/*styling for the earn about section*/
+.learn-about .container{
+    display: block;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
 .learn-about > .container .cards{
     display: grid;
     grid-template-columns: repeat(3, 300px);
+    column-gap: 30px;
+    justify-content: center;
 }
 
-.learn-about{
-    border-color:#E2E8F0;
-    border: 10px;
+.learn-about .card{
     border-radius: 5px;
-    box-shadow: #E2E8F0;
-}
-
-.learn-about h1{
-    font-size: 24px;
-    color: #E2E8F0;
+    border: 2px solid #E2E8F0;
+    box-shadow: 2px 3px 2px 2px #E2E8F0;
+    margin: 0 0 30px 0;
+    max-height: 430px;
 }
 
 .learn-about h3{
     font-size: 21px;
     color: #48BB78;
+    margin: 10px 10px 10px 10px;
 }
 
-.testing-desciption{
-    float: left;
+.learn-about p{
+    margin: 10px 10px 10px 10px;
 }
 
-.testing-desciption h2{
-    background-color: white;
-
+.learn-about .card img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 
-.cta > .btn{
-    float: right;
-    color: #48BB78;
+
+/*styling for COVID-19 testing section*/
+
+.testing .container{
+    background-color: #4A5568;
+    color: white;
+    padding: 80px 80px 80px 80px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta  .btn{
+    float: end;
+    background-color: #48BB78;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+}
+
+/*styling for the recent stories section*/
+.stories .container article {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.stories .container article > img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: fit;
+    float: left;
+    margin: 20px 20px 20px 20px;
 }
 
 .stories .container h2, .stories .container > .article-body a{
@@ -104,26 +167,41 @@ header nav > ul li{
     font-size: 18px;
 }
 
-.stories .containers > article a{
+.stories .container > article a{
     float: left;
 }
 
-.newsletter{
+/*styling for newsletter section*/
+
+.newsletter .container{
     text-align: center;
     align-items: center;
-    background-color: #4A5568;
+    background-color: #48BB78;
     color: white;
+    padding: 70px 70px 70px 70px;
 }
 
 .form-group{
     display: inline;
 }
 
-form button{
-    background-color: #5A67D8;
+form input{
+    height: 42px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
 }
 
-footer{
+form button{
     background-color: #5A67D8;
+    border: none;
     color: white;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+}
+
+footer .container{
+    background-color: #4A5568;
+    color: white;
+    padding: 5px 70px 5px 70px;
 }
